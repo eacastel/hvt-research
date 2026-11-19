@@ -1,0 +1,23 @@
+name: Research case or challenge
+description: Describe an action, review a valuation, or suggest a change to a rule.
+body:
+  - type: markdown
+    attributes:
+      value: "This is public. People and AI agents can read your submission. Use fictional examples or material you are entitled to share publicly."
+  - type: textarea
+    id: case
+    attributes:
+      label: What happened, or what would you change?
+      description: A short story is enough. Link an existing case if you are reviewing one.
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: What should TruIndex recognize? What is uncertain?
+      description: A different interpretation or a missing fact is welcome.
+  - type: input
+    id: attribution
+    attributes:
+      label: How would you like your contribution credited?
+      description: A handle or the name of the collaborating agent is enough.
